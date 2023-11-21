@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="input.css">
+</head>
+
+<body>
+  <!-- ========Tailwind Alert========= -->
+  <div class="grid grid-cols-1  mx-auto ">
+    <div class="h-14  bg-blue-100  flex items-center rounded-md border border-blue-300">
+      <p class="ps-5">A simple primary alert—check it out!</p>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <!-- ========MUI Spanning table using tailwind css========= -->
+
+  <div class="grid grid-col-1 ">
+    <div class="max-h-[700px] overflow-x-scroll  md:overflow-hidden ">
+      <table class=" w-full    ">
+        <thead>
+          <tr>
+            <th class=" border-b border-gray-300  font-normal p-4 min-w-[200px] text-center" colspan="3">Details</th>
+            <th class=" border-b border-gray-300  font-normal p-4 min-w-[170px] text-end">Price</th>
+          </tr>
+        </thead>
+        <tbody class="">
+          <tr>
+            <td class="border-b border-gray-300  font-normal p-4 w-2/5  min-w-[200px] ">Desc</td>
+            <td class="border-b border-gray-300  font-normal p-4 w-1/5  min-w-[170px] text-right   ">Qty.</td>
+            <td class="border-b border-gray-300  font-normal p-4 w-1/5  min-w-[170px] text-right ">Unit</td>
+            <td class="border-b border-gray-300  font-normal p-4 w-1/5  min-w-[170px] text-right  ">Sum</td>
+          </tr>
+
+          <tr>
+            <td class="border-b border-gray-300 text-left font-normal p-4  min-w-[200px]">Paperclips(Box)</td>
+            <td class="border-b border-gray-300 font-normal p-4 text-right min-w-[170px] ">100</td>
+            <td class="border-b border-gray-300 font-normal p-4 text-right min-w-[170px] ">1.15</td>
+            <td class="border-b border-gray-300 font-normal p-4 text-right min-w-[170px] ">115.00</td>
+          </tr>
+
+          <tr>
+            <td class="border-b border-gray-300 text-left font-normal p-4  min-w-[200px]">Paper(Case)</td>
+            <td class="border-b border-gray-300  font-normal p-4 text-right  min-w-[170px]">10</td>
+            <td class="border-b border-gray-300  font-normal p-4 text-right  min-w-[170px]">45.99</td>
+            <td class="border-b border-gray-300  font-normal p-4 text-right  min-w-[170px]">459.90</td>
+          </tr>
+
+          <tr>
+            <td class="border-b border-gray-300 text-left font-normal p-4  min-w-[200px] ">Waste Basket</td>
+            <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px]  ">2</td>
+            <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px]  ">17.99</td>
+            <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px]  ">35.98</td>
+          </tr>
+
+          <tr>
+            <td class=" text-right font-normal p-4 min-w-[170px] "></td>
+            <td class="border-b border-gray-300 text-left font-normal p-4 min-w-[200px]  ">Subtotal</td>
+            <td class="border-b border-gray-300 text-right  font-normal p-4 min-w-[170px]  "></td>
+            <td class="border-b border-gray-300 text-right  font-normal p-4  min-w-[170px]">610.88</td>
+          </tr>
+
+          <tr>
+            <td class=" text-right font-normal p-4  min-w-[170px]"></td>
+            <td class="border-b border-gray-300 text-left   font-normal p-4 min-w-[200px]  ">Tax</td>
+            <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px]">7%</td>
+            <td class="border-b border-gray-300 text-right  font-normal p-4 min-w-[170px] ">42.76</td>
+          </tr>
+
+          <tr>
+            <td class="border-b-4 border-gray-300  text-right font-normal p-4 min-w-[200px] "></td>
+            <td class="border-b-4 border-gray-300 text-left   font-normal p-4 min-w-[170px] ">Total</td>
+            <td class="border-b-4 border-gray-300 text-center font-normal p-4 min-w-[170px] "></td>
+            <td class="border-b-4 border-gray-300 text-right  font-normal p-4 min-w-[170px] ">653.64</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+  <br>
+  <br>
+
+  <!-- ========MUI Sticky header table using tailwind css========= -->
+  <div class="overflow-hidden ">
+    <div class="grid grid-col-1 ">
+      <div class=" overflow-y-scroll  max-h-[420px] md:h-screen z-50  ">
+        <table class="border-separate border-spacing-0 w-full    ">
+          <thead class="bg-white sticky top-0 ">
+            <tr class="">
+              <th class="sticky top-0 z-10 border-b border-gray-300 text-left font-normal p-4 min-w-[170px] ">Name</th>
+              <th class="sticky top-0 z-10 border-b border-gray-300 text-left  font-normal p-4 min-w-[100px] ">ISO Code
+              </th>
+              <th class="sticky top-0 z-10 border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">
+                Population
+              </th>
+              <th class="sticky top-0 z-10 border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">
+                Size(km<sup>2</sup>)</th>
+              <th class="sticky top-0 z-10 border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">Density
+              </th>
+
+            </tr>
+          </thead>
+          <tbody class="">
+            <tr>
+              <td class="border-b border-gray-300 text-left font-normal p-4 min-w-[170px] ">India</td>
+              <td class="border-b border-gray-300 text-left  font-normal p-4 min-w-[100px] ">IN</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">1,324,171,354</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">3,287,263</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">402.82</td>
+            </tr>
+
+            <tr>
+              <td class="border-b border-gray-300 text-left font-normal p-4 min-w-[170px] ">China</td>
+              <td class="border-b border-gray-300 text-left  font-normal p-4 min-w-[100px] ">CN</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">1,403,500,365</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">9,596,961</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">146.24</td>
+            </tr>
+
+            <tr>
+              <td class="border-b border-gray-300 text-left font-normal p-4 min-w-[170px] ">Italy</td>
+              <td class="border-b border-gray-300 text-left  font-normal p-4 min-w-[100px] ">IN</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">60,483,973</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">301,340</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">200.72</td>
+            </tr>
+
+            <tr>
+              <td class="border-b border-gray-300 text-left font-normal p-4 min-w-[170px] ">United States</td>
+              <td class="border-b border-gray-300 text-left  font-normal p-4 min-w-[100px] ">US</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">327,167,434</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">9,833,520</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">33.27</td>
+            </tr>
+
+            <tr>
+              <td class="border-b border-gray-300 text-left font-normal p-4 min-w-[170px] ">Canada</td>
+              <td class="border-b border-gray-300 text-left  font-normal p-4 min-w-[100px] ">CA</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">37,602,103</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">9,984,670</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">3.77</td>
+            </tr>
+
+            <tr>
+              <td class="border-b border-gray-300 text-left font-normal p-4 min-w-[170px] ">Australia</td>
+              <td class="border-b border-gray-300 text-left  font-normal p-4 min-w-[100px] ">AU</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">25,475,400</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">7,692,024</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">3.31</td>
+            </tr>
+
+            <tr>
+              <td class="border-b border-gray-300 text-left font-normal p-4 min-w-[170px] ">Germany</td>
+              <td class="border-b border-gray-300 text-left  font-normal p-4 min-w-[100px] ">DE</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">83,019,200</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">357,578</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">232.17</td>
+            </tr>
+
+            <tr>
+              <td class="border-b border-gray-300 text-left font-normal p-4 min-w-[170px] ">Ireland</td>
+              <td class="border-b border-gray-300 text-left  font-normal p-4 min-w-[100px] ">IE</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">4,857,000</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">70,273</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">69.17</td>
+            </tr>
+
+            <tr>
+              <td class="border-b border-gray-300 text-left font-normal p-4 min-w-[170px] ">Mexico</td>
+              <td class="border-b border-gray-300 text-left  font-normal p-4 min-w-[100px] ">MX</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">126,577,691</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">1972,550</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">334.20</td>
+            </tr>
+
+            <tr>
+              <td class="border-b border-gray-300 text-left font-normal p-4 min-w-[170px] ">Japan</td>
+              <td class="border-b border-gray-300 text-left  font-normal p-4 min-w-[100px] ">JP</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">126,317,000</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">377,973</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">104.61</td>
+            </tr>
+
+            <tr>
+              <td class="border-b border-gray-300 text-left font-normal p-4 min-w-[170px] ">France</td>
+              <td class="border-b border-gray-300 text-left  font-normal p-4 min-w-[100px] ">FR</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">67,022,000</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">640,679</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">4104.61</td>
+            </tr>
+
+            <tr>
+              <td class="border-b border-gray-300 text-left font-normal p-4 min-w-[170px] ">United Kingdom</td>
+              <td class="border-b border-gray-300 text-left  font-normal p-4 min-w-[100px] ">GB</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">67,545,757</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">242,495</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">278.54</td>
+            </tr>
+
+            <tr>
+              <td class="border-b border-gray-300 text-left font-normal p-4 min-w-[170px] ">Russia</td>
+              <td class="border-b border-gray-300 text-left  font-normal p-4 min-w-[100px] ">RU</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">146,793,744</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">17,098,246</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">8.59</td>
+            </tr>
+
+            <tr>
+              <td class="border-b border-gray-300 text-left font-normal p-4 min-w-[170px] ">Nigeria</td>
+              <td class="border-b border-gray-300 text-left  font-normal p-4 min-w-[100px] ">NG</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">200,962,417</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">8,515,767</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">217.55</td>
+            </tr>
+
+            <tr>
+              <td class="border-b border-gray-300 text-left font-normal p-4 min-w-[170px] ">Brazil</td>
+              <td class="border-b border-gray-300 text-left  font-normal p-4 min-w-[100px] ">BR</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">210,147,125</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">8,515,767</td>
+              <td class="border-b border-gray-300 text-right font-normal p-4 min-w-[170px] ">24.68</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="sticky bottom-10 z-auto border-b-2  border-gray-400 text-right font-normal p-4 bg-white h-24 pt-8">
+        <p>Rows per page:
+          <select name="" id="" class="m-5 focus:outline-none focus:bg-gray-200 select">
+            <option value="" class="bg-white">10</option>
+            <option value="" class="bg-white ">25</option>
+            <option value="" class="bg-white ">100</option>
+          </select>
+          <span>1-10 of 15</span>
+        </p>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
